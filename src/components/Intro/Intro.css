@@ -1,0 +1,114 @@
+.intro-wrapper {
+    background-color: var(--light-peach);
+    border: 2px solid var(--black);
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: width .4s cubic-bezier(.48,.11,.49,.96), height .4s cubic-bezier(.48,.11,.49,.96);
+    top: 15%;
+    left: 25%;
+}
+
+.info-nav-wrapper {
+    position: sticky;
+    top: 0;
+    background-color: var(--peach);
+    border-bottom: 2px solid var(--black);
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    z-index: 10;
+}
+
+.info-title {
+    color: var(--white);
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.info-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding-right: 1rem;
+}
+
+.info-nav-box {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 2px solid var(--black);
+    background-color: var(--white);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s cubic-bezier(.48,.11,.49,.96);
+    transform: scale(1) rotate(0deg);
+}
+
+.info-nav-box:hover {
+    transform: scale(1.2) rotate(1440deg);
+}
+
+.nav-icon {
+    position: absolute;
+    background-color: var(--black);
+    width: 8px;
+    height: 2px;
+    border-radius: 2px;
+}
+
+.plus-icon {
+    transform: rotate(90deg);
+}
+
+.x-icon-1 {
+    transform: rotate(45deg);
+}
+
+.x-icon-2 {
+    transform: rotate(-45deg);
+}
+
+.info-content-wrapper {
+    width: calc(100% - 1rem);
+    max-height: calc(100% - 4rem);
+    overflow-y: scroll;
+    z-index: 5;
+    margin-bottom: 1rem;
+}
+
+.info-content {
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+}
+
+.info-content-wrapper::-webkit-scrollbar {
+    width: 10px;
+    background: none;
+    z-index: 4;
+  }
+  
+.info-content-wrapper::-webkit-scrollbar-track {
+    border: 1px solid black;
+    background: var(--white);
+    border-radius: 10px;
+}
+  
+.info-content-wrapper::-webkit-scrollbar-thumb {
+    background: var(--peach);
+    width: 5rem;
+    border-radius: 10px;
+} 

@@ -1,0 +1,69 @@
+.header {
+    width: calc(100% - 1rem);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0.5rem;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--peach);
+    border: 2px solid var(--black);
+    border-radius: 4rem;
+    padding: 0.4rem 1rem;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-right: 1rem;
+}
+
+.logo {
+    height: 2rem;
+}
+
+.title-box {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-right: 3.5rem;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-style: bold;
+    color: var(--white);
+    padding: 0;
+    margin: 0;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    gap: 2.5rem;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    gap: 0.5rem;
+}
+
+.contact-logo {
+    height: 1.1rem;
+}
+
+.contact-text {
+    font-size: 1rem;
+    color: var(--white);
+}
